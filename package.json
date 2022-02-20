@@ -9,6 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@prisma/client": "^3.9.2",
     "express": "^4.17.1",
     "prisma": "^3.9.2",
     "swagger-ui-express": "^4.3.0",
