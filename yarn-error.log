@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @prisma/client
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add bcrypt jsonwebtoken
 
 PATH: 
   C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Python310\Scripts\;C:\Python310\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files \nodejs;C:\Users\Yua\AppData\Roaming\npm;C:\Users\Yua\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Yua\AppData\Local\GitHubDesktop\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\Yua\Documents\GitHub\Nodejs-TS-TDD-SOLID\node_modules\@prisma\engines\query_engine-windows.dll.node'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Yua\Documents\GitHub\Nodejs-TS-TDD-SOLID\node_modules\.bin\ts-node-dev'
 
 npm manifest: 
   {
@@ -24,10 +24,10 @@ npm manifest:
     "license": "MIT",
     "scripts": {
       "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-      "lint:fix": "eslint --fix . --ext ts,tsx",
       "test": "jest"
     },
     "dependencies": {
+      "@prisma/client": "^3.9.2",
       "express": "^4.17.1",
       "prisma": "^3.9.2",
       "swagger-ui-express": "^4.3.0",
@@ -40,13 +40,6 @@ npm manifest:
       "@types/uuid": "^8.3.0",
       "@typescript-eslint/eslint-plugin": "^4.16.1",
       "@typescript-eslint/parser": "^4.16.1",
-      "eslint": "^7.21.0",
-      "eslint-config-airbnb-base": "^14.2.1",
-      "eslint-config-prettier": "^8.1.0",
-      "eslint-import-resolver-typescript": "^2.4.0",
-      "eslint-plugin-import": "^2.22.1",
-      "eslint-plugin-import-helpers": "^1.1.0",
-      "eslint-plugin-prettier": "^3.3.1",
       "jest": "^26.6.3",
       "prettier": "^2.2.1",
       "supertest": "^6.1.3",
@@ -617,6 +610,18 @@ Lockfile:
     dependencies:
       "@nodelib/fs.scandir" "2.1.5"
       fastq "^1.6.0"
+  
+  "@prisma/client@^3.9.2":
+    version "3.9.2"
+    resolved "https://registry.yarnpkg.com/@prisma/client/-/client-3.9.2.tgz#ad17dcfb702842573fe6ec3b7dc4615eff8d8fc6"
+    integrity sha512-VlEIYVMyfFZHbVBOlunPl47gmP/Z0zzPjPj8I7uKEIaABqrUy50ru3XS0aZd8GFvevVwt7p91xxkUjNjrWhKAQ==
+    dependencies:
+      "@prisma/engines-version" "3.9.0-58.bcc2ff906db47790ee902e7bbc76d7ffb1893009"
+  
+  "@prisma/engines-version@3.9.0-58.bcc2ff906db47790ee902e7bbc76d7ffb1893009":
+    version "3.9.0-58.bcc2ff906db47790ee902e7bbc76d7ffb1893009"
+    resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-3.9.0-58.bcc2ff906db47790ee902e7bbc76d7ffb1893009.tgz#ea03ffa723382a526dc6625ce6eae9b6ad984400"
+    integrity sha512-5Dh+qTDhpPR66w6NNAnPs+/W/Qt4r1DSd+qhfPFcDThUK4uxoZKGlPb2IYQn5LL+18aIGnmteDf7BnVMmvBNSQ==
   
   "@prisma/engines@3.9.0-58.bcc2ff906db47790ee902e7bbc76d7ffb1893009":
     version "3.9.0-58.bcc2ff906db47790ee902e7bbc76d7ffb1893009"
